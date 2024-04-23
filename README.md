@@ -1,29 +1,42 @@
-# Batalha Pokémon em Python
-- Este é um projeto desenvolvido como trabalho final para a disciplina de Algoritmos e Estruturas de Dados I. 
+# Pokémon Battle in Python
+- This is a project developed as the final assignment for the Algorithms and Data Structures I course.
 
-## Pré-requisitos
+## Prerequisites
 
-Antes de executar o programa, certifique-se de ter o seguinte instalado no seu computador:
-- Uma IDE (Integrated Development Environment), como o Visual Studio Code, PyCharm, etc..
-- Python: Certifique-se de ter o Python instalado no seu sistema.
-- Você pode baixar e instalar o Python a partir do <a href="https://nodejs.dev](https://www.python.org/downloads/">site oficial</a>.
+Before running the program, make sure you have the following installed on your computer:
+- An IDE (Integrated Development Environment), such as Visual Studio Code, PyCharm, etc.
+- Python: Make sure you have Python installed on your system.
+- You can download and install Python from the [official website](https://www.python.org/downloads/).
 
-## Como executar
+## How to Run
 
-1. Clone o repositório para o seu computador ou faça o download do arquivo ZIP e extraia-o.
-2. Abra sua IDE e navegue até o diretório onde o projeto está localizado.
-3. Abra o arquivo principal do programa, geralmente chamado de `batalha_pokemon.py`.
-4. Execute o programa a partir da sua IDE. Você também pode executá-lo a partir do terminal usando o comando `python batalha_pokemon.py`.
+1. Clone the repository to your computer or download the ZIP file and extract it.
+2. Open your IDE and navigate to the directory where the project is located.
+3. Open the main program file, usually named `batalha_pokemon.py`.
+4. Run the program from your IDE. You can also run it from the terminal using the command `python batalha_pokemon.py`.
 
-## Funcionalidades
+## Features
 
-- Insira os nomes dos dois jogadores.
-- Programa distribui 3 Pokémon para cada jogador.
-- Durante a batalha, o vencedor é decidido com base nos tipos dos Pokémon. Por exemplo: fogo vence planta.
-- Após cada turno, o programa mostra o vencedor da rodada.
-- No final da batalha, o programa mostra o vencedor ou se houve empate.
+- Enter the names of the two players.
+- The program distributes 3 Pokémon to each player.
+- During the battle, the winner is decided based on the Pokémon types. For example: fire beats grass.
+- After each turn, the program displays the winner of the round.
+- At the end of the battle, the program shows the winner or if there was a tie.
 
+## Contributing
 
-## Autor
+If you would like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a branch for your feature (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -am 'Add a new feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/nathpizzolato/BatalhaPokemon_NathaliaPizzolato/blob/main/LICENSE) file for more details.
+
+## Author
 
 <a href="https://github.com/nathpizzolato"><img src="https://github.com/nathpizzolato.png" width="100" height="100"></a>
