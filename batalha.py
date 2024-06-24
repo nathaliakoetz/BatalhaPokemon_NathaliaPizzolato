@@ -49,8 +49,8 @@ vantagens = {
     'gelo': ['grama', 'terra', 'ar'],
     'terra': ['pedra', 'elétrico', 'fogo'],
     'dragão': ['grama', 'terra', 'ar'],
-    'psíquico': ['lutador', 'veneno'],
-    'sombrio': ['psíquico', 'fantasma']
+    'psíquico': ['dragão', 'grama', 'ar'],
+    'sombrio': ['dragão', 'psíquico']
 }
 
 # Função de batalha
@@ -84,8 +84,8 @@ def limpar_tela():
 # Salva o resultado no arquivo
 def salvar_resultado(nome1, nome2, vencedor):
     with open("resultado_jogo.txt", "a") as file:
-        file.write(f"Jogador 1: {nome1}\n")
-        file.write(f"Jogador 2: {nome2}\n")
+        file.write(f"Treinador 1: {nome1}\n")
+        file.write(f"Treinador 2: {nome2}\n")
         file.write(f"Vencedor: {vencedor}\n")
         file.write("-" * 40 + "\n")
 
@@ -103,47 +103,59 @@ def mostrar_menu():
     print("2. Ver resultados")
     print("3. Sair")
     escolha = input("Escolha uma opção: ")
-    print("\n")
-    print(f"{Fore.RED}{'*'*40}\n{'*' * 5} {' *** '.center(28)} {'*' * 5}\n{'*'*40}{Style.RESET_ALL}")
     return escolha
 
 # Função principal
 def Batalha():
     pokemons = carregar_pokemons()
-    
+    print(f"{'*'*40}\n{'*' * 5} {'BATALHA POKEMON'.center(28)} {'*' * 5}\n{'*'*40}")
+    input('Aperte ENTER para iniciar o sistema ')
+
+    limpar_tela()
+    print(f"Iniciando o Sistema ....")
+    contador_regressivo()
+
     while True:
+
         limpar_tela()
-        print(f"{Fore.RED}{'*'*40}\n{'*' * 5} {'BATALHA POKEMON'.center(28)} {'*' * 5}\n{'*'*40}{Style.RESET_ALL}")
         escolha = mostrar_menu()
 
         if escolha == '1':
             limpar_tela()
-            print(f"{'*'*40}\n{'*' * 5}{'REGISTRO DE TREINADORES'.center(28)} {'*' * 5}\n{'*'*40}")
-            nome1 = input("Digite o nome do Jogador 1: ")
-            nome2 = input("Digite o nome do Jogador 2: ")
+            print("")
+            print(f"{'*'*40}\n{'*' * 5} {'REGISTRO DE TREINADORES'.center(28)} {'*' * 5}\n{'*'*40}")
+            print("")
+            nome1 = input("Digite o nome do(a) primeiro Treinador(a): ").upper()
+            nome2 = input("Digite o nome do(a) segundo Treinador(a): ").upper()
 
-            jogador1 = selecionar_pokemons(pokemons)
-            jogador2 = selecionar_pokemons(pokemons)
+            Treinador1 = selecionar_pokemons(pokemons)
+            Treinador2 = selecionar_pokemons(pokemons)
 
             pontos_j1 = 0
             pontos_j2 = 0
 
             limpar_tela()
-            print(f"{nome1} e {nome2} estão escolhendo seu time...")
+            print(f"{'-'*40}")
+            print(f"{nome1} E {nome2} ESTÃO ESCOLHENDO SEUS TIMES")
+            print(f"{'-'*40}")
+            print()
             contador_regressivo()
 
             limpar_tela()
-            print(f"{'*'*35}\nTime do jogador {nome1}: \n{'*'*35}")
-            for p in jogador1:
+            print(f"{'*'*40}\n {'TIME DO(A) TREINADOR(A)'} {nome1} \n{'*'*40}")
+            # print(f"{'*'*35}\nTIME DO Treinador {nome1}:\n{'*'*35}")
+            for p in Treinador1:
                 print(f"{p['nome']} ( {p['tipo']} {p['emoji']} )")
 
             print("\n")
 
-            print(f"{'*'*35}\nTime do jogador {nome2}: \n{'*'*35}")
-            for p in jogador2:
+            print(f"{'*'*40}\n {'TIME DO(A) TREINADOR(A)'} {nome2} \n{'*'*40}")
+            # print(f"{'*'*35}\nTime do Treinador {nome2}:\n{'*'*35}")
+            for p in Treinador2:
                 print(f"{p['nome']} ( {p['tipo']} {p['emoji']} )")
 
-            for pokemon1, pokemon2 in zip(jogador1, jogador2):
+            for pokemon1, pokemon2 in zip(Treinador1, Treinador2):
+                print()
                 print("Próximo turno começando em:")
                 contador_regressivo()
                 limpar_tela()
@@ -151,9 +163,12 @@ def Batalha():
                 pontos_rodada_j1, pontos_rodada_j2 = batalha(pokemon1, pokemon2)
                 pontos_j1 += pontos_rodada_j1
                 pontos_j2 += pontos_rodada_j2
-                print(f"Pontos atuais: {nome1} - {pontos_j1}, {nome2} - {pontos_j2}\n")
+
+                print(f"{'*'*40}\n {'Pontos atuais: '}{nome1}: {pontos_j1}, {nome2}: {pontos_j2} \n{'*'*40}")
+                # print(f"Pontos atuais: {nome1}: {pontos_j1}, {nome2}: {pontos_j2}\n")
 
             limpar_tela()
+            print()
             print(f"Pontuação Final:\n{nome1}: {pontos_j1} pontos\n{nome2}: {pontos_j2} pontos")
 
             if pontos_j1 > pontos_j2:
@@ -166,7 +181,9 @@ def Batalha():
                 resultado_final = f"{Fore.RED}O jogo termina em empate!{Style.RESET_ALL}"
                 salvar_resultado(nome1, nome2, "Empate")
 
+            print(f"{'-'*25}")
             print(resultado_final)
+            print(f"{'-'*25}")
             print(" ")
             input("Pressione Enter para continuar...")
 
@@ -176,7 +193,9 @@ def Batalha():
             input("Pressione Enter para continuar...")
 
         elif escolha == '3':
+            print()
             print(f"O sistema foi finalizado pelo usuário ...")
+            print('\n')
             break
 
         else:
