@@ -135,9 +135,8 @@ def Batalha():
             pontos_j2 = 0
 
             limpar_tela()
-            print(f"{'-'*40}")
+            print()
             print(f"{nome1} E {nome2} ESTÃO ESCOLHENDO SEUS TIMES")
-            print(f"{'-'*40}")
             print()
             contador_regressivo()
 
@@ -164,12 +163,9 @@ def Batalha():
                 pontos_j1 += pontos_rodada_j1
                 pontos_j2 += pontos_rodada_j2
 
-                print(f"{'*'*40}\n {'Pontos atuais: '}{nome1}: {pontos_j1}, {nome2}: {pontos_j2} \n{'*'*40}")
-                # print(f"Pontos atuais: {nome1}: {pontos_j1}, {nome2}: {pontos_j2}\n")
-
-            limpar_tela()
-            print()
+            print(f"{'-'*25}")
             print(f"Pontuação Final:\n{nome1}: {pontos_j1} pontos\n{nome2}: {pontos_j2} pontos")
+            print(f"{'-'*25}")
 
             if pontos_j1 > pontos_j2:
                 resultado_final = f"{Fore.GREEN}{nome1} vence o jogo!{Style.RESET_ALL}"
@@ -178,12 +174,10 @@ def Batalha():
                 resultado_final = f"{Fore.GREEN}{nome2} vence o jogo!{Style.RESET_ALL}"
                 salvar_resultado(nome1, nome2, nome2)
             else:
-                resultado_final = f"{Fore.RED}O jogo termina em empate!{Style.RESET_ALL}"
+                resultado_final = f"{Fore.YELLOW}O jogo termina empatado!{Style.RESET_ALL}"
                 salvar_resultado(nome1, nome2, "Empate")
-
-            print(f"{'-'*25}")
+        
             print(resultado_final)
-            print(f"{'-'*25}")
             print(" ")
             input("Pressione Enter para continuar...")
 
