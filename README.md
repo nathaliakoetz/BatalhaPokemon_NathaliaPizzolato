@@ -18,7 +18,7 @@ Before running the program, make sure you have the following installed on your c
 ## Features
 
 - Enter the names of the two players.
-- The program distributes 3 Pokémon to each player.
+- The program distributes 4 Pokémon to each player.
 - During the battle, the winner is decided based on the Pokémon types. For example: fire beats grass.
 - After each turn, the program displays the winner of the round.
 - At the end of the battle, the program shows the winner or if there was a tie.
