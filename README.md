@@ -12,8 +12,8 @@ Before running the program, make sure you have the following installed on your c
 
 1. Clone the repository to your computer or download the ZIP file and extract it.
 2. Open your IDE and navigate to the directory where the project is located.
-3. Open the main program file, usually named `batalha_pokemon.py`.
-4. Run the program from your IDE. You can also run it from the terminal using the command `python batalha_pokemon.py`.
+3. Open the main program file, usually named `batalha.py`.
+4. Run the program from your IDE. You can also run it from the terminal using the command `python batalha.py`.
 
 ## Features
 
