@@ -1,0 +1,21 @@
+
+Jogador 1: Nath
+Jogador 2: Felipe
+Vencedor: Empate
+----------------------------------------
+Jogador 1: Renan
+Jogador 2: Felipe
+Vencedor: Felipe
+----------------------------------------
+Jogador 1: 3
+Jogador 2: 3
+Vencedor: Empate
+----------------------------------------
+Jogador 1: Renan
+Jogador 2: Felipe
+Vencedor: Renan
+----------------------------------------
+Jogador 1: Felipe
+Jogador 2: Nathalia
+Vencedor: Nathalia
+----------------------------------------
