@@ -1,5 +1,4 @@
 # Pokémon Battle in Python
-- This is a project developed as the final assignment for the Algorithms and Data Structures I course.
 
 ## Prerequisites
 
