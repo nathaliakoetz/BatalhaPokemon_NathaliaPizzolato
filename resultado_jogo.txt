@@ -1,33 +1,16 @@
-
 Treinador 1: NATH
-Treinador 2: KAROL
+Treinador 2: LULU
+Vencedor: NATH
+----------------------------------------
+Treinador 1: KAROL
+Treinador 2: NATH
 Vencedor: Empate
 ----------------------------------------
-Treinador 1: NATHALIA
-Treinador 2: KAROL
-Vencedor: NATHALIA
-----------------------------------------
-Treinador 1: THALIA
+Treinador 1: EDECIO
 Treinador 2: KAROL
 Vencedor: KAROL
 ----------------------------------------
 Treinador 1: NATH
 Treinador 2: FELIPE
 Vencedor: FELIPE
-----------------------------------------
-Treinador 1: NATH
-Treinador 2: THALIA
-Vencedor: Empate
-----------------------------------------
-Treinador 1: FELIPE
-Treinador 2: RENAN
-Vencedor: Empate
-----------------------------------------
-Treinador 1: PAULO
-Treinador 2: CARIOCA
-Vencedor: CARIOCA
-----------------------------------------
-Treinador 1: TATO
-Treinador 2: FELIPE
-Vencedor: Empate
 ----------------------------------------

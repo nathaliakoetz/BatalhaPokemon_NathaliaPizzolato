@@ -35,7 +35,7 @@ def carregar_pokemons():
     return pokemons
 
 # Seleciona Pokemons aleatoriamente
-def selecionar_pokemons(pokemons, quantidade = 4):
+def selecionar_pokemons(pokemons, quantidade = 6):
     return random.sample(pokemons, quantidade)
 
 # Define as regras de vantagem entre os tipos
@@ -69,7 +69,7 @@ def batalha(pokemon1, pokemon2):
 
 # Contador regressivo
 def contador_regressivo():
-    for i in range(10, -1, -1):
+    for i in range(6, -1, -1):
         print(i, end=' ', flush=True)
         time.sleep(1)
     print()
@@ -178,16 +178,17 @@ def Batalha():
                 salvar_resultado(nome1, nome2, "Empate")
         
             print(resultado_final)
-            print(" ")
+            print("\n")
             input("Pressione Enter para continuar...")
 
         elif escolha == '2':
             limpar_tela()
+            print('\n')
             ver_resultados()
             input("Pressione Enter para continuar...")
 
         elif escolha == '3':
-            print()
+            limpar_tela()
             print(f"O sistema foi finalizado pelo usuário ...")
             print('\n')
             break
