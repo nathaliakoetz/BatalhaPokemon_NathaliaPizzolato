@@ -34,8 +34,8 @@ If you would like to contribute to this project, please follow these steps:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/nathpizzolato/BatalhaPokemon_NathaliaPizzolato/blob/main/LICENSE) file for more details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/nathaliakoetz/BatalhaPokemon_NathaliaPizzolato/blob/main/LICENSE) file for more details.
 
 ## Author
 
-<a href="https://github.com/nathpizzolato"><img src="https://github.com/nathpizzolato.png" width="100" height="100"></a>
+<a href="https://github.com/nathpizzolato"><img src="https://github.com/nathaliakoetz.png" width="100" height="100"></a>
